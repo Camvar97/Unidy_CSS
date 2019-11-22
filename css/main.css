@@ -1,9 +1,143 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+:root {
+  --blue: #3498db;
+  --indigo: #34495e;
+  --purple: #9b59b6;
+  --pink: #f08f90;
+  --red: #e74c3c;
+  --orange: #e67e22;
+  --yellow: #f1c40f;
+  --green: #2ecc71;
+  --teal: #1abc9d;
+  --cyan: #20ccde;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+.bg-blue {
+  background-color: #3498db !important;
+}
+
+.glow-blue {
+  -webkit-box-shadow: 0 10px 15px 2px rgba(52, 152, 219, 0.1), 0 4px 6px -2px rgba(52, 152, 219, 0.1) !important;
+          box-shadow: 0 10px 15px 2px rgba(52, 152, 219, 0.1), 0 4px 6px -2px rgba(52, 152, 219, 0.1) !important;
+}
+
+.bg-indigo {
+  background-color: #34495e !important;
+}
+
+.glow-indigo {
+  -webkit-box-shadow: 0 10px 15px 2px rgba(52, 73, 94, 0.1), 0 4px 6px -2px rgba(52, 73, 94, 0.1) !important;
+          box-shadow: 0 10px 15px 2px rgba(52, 73, 94, 0.1), 0 4px 6px -2px rgba(52, 73, 94, 0.1) !important;
+}
+
+.bg-purple {
+  background-color: #9b59b6 !important;
+}
+
+.glow-purple {
+  -webkit-box-shadow: 0 10px 15px 2px rgba(155, 89, 182, 0.1), 0 4px 6px -2px rgba(155, 89, 182, 0.1) !important;
+          box-shadow: 0 10px 15px 2px rgba(155, 89, 182, 0.1), 0 4px 6px -2px rgba(155, 89, 182, 0.1) !important;
+}
+
+.bg-pink {
+  background-color: #f08f90 !important;
+}
+
+.glow-pink {
+  -webkit-box-shadow: 0 10px 15px 2px rgba(240, 143, 144, 0.1), 0 4px 6px -2px rgba(240, 143, 144, 0.1) !important;
+          box-shadow: 0 10px 15px 2px rgba(240, 143, 144, 0.1), 0 4px 6px -2px rgba(240, 143, 144, 0.1) !important;
+}
+
+.bg-red {
+  background-color: #e74c3c !important;
+}
+
+.glow-red {
+  -webkit-box-shadow: 0 10px 15px 2px rgba(231, 76, 60, 0.1), 0 4px 6px -2px rgba(231, 76, 60, 0.1) !important;
+          box-shadow: 0 10px 15px 2px rgba(231, 76, 60, 0.1), 0 4px 6px -2px rgba(231, 76, 60, 0.1) !important;
+}
+
+.bg-orange {
+  background-color: #e67e22 !important;
+}
+
+.glow-orange {
+  -webkit-box-shadow: 0 10px 15px 2px rgba(230, 126, 34, 0.1), 0 4px 6px -2px rgba(230, 126, 34, 0.1) !important;
+          box-shadow: 0 10px 15px 2px rgba(230, 126, 34, 0.1), 0 4px 6px -2px rgba(230, 126, 34, 0.1) !important;
+}
+
+.bg-yellow {
+  background-color: #f1c40f !important;
+}
+
+.glow-yellow {
+  -webkit-box-shadow: 0 10px 15px 2px rgba(241, 196, 15, 0.1), 0 4px 6px -2px rgba(241, 196, 15, 0.1) !important;
+          box-shadow: 0 10px 15px 2px rgba(241, 196, 15, 0.1), 0 4px 6px -2px rgba(241, 196, 15, 0.1) !important;
+}
+
+.bg-green {
+  background-color: #2ecc71 !important;
+}
+
+.glow-green {
+  -webkit-box-shadow: 0 10px 15px 2px rgba(46, 204, 113, 0.1), 0 4px 6px -2px rgba(46, 204, 113, 0.1) !important;
+          box-shadow: 0 10px 15px 2px rgba(46, 204, 113, 0.1), 0 4px 6px -2px rgba(46, 204, 113, 0.1) !important;
+}
+
+.bg-teal {
+  background-color: #1abc9d !important;
+}
+
+.glow-teal {
+  -webkit-box-shadow: 0 10px 15px 2px rgba(26, 188, 157, 0.1), 0 4px 6px -2px rgba(26, 188, 157, 0.1) !important;
+          box-shadow: 0 10px 15px 2px rgba(26, 188, 157, 0.1), 0 4px 6px -2px rgba(26, 188, 157, 0.1) !important;
+}
+
+.bg-cyan {
+  background-color: #20ccde !important;
+}
+
+.glow-cyan {
+  -webkit-box-shadow: 0 10px 15px 2px rgba(32, 204, 222, 0.1), 0 4px 6px -2px rgba(32, 204, 222, 0.1) !important;
+          box-shadow: 0 10px 15px 2px rgba(32, 204, 222, 0.1), 0 4px 6px -2px rgba(32, 204, 222, 0.1) !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.glow-light {
+  -webkit-box-shadow: 0 10px 15px 2px rgba(248, 249, 250, 0.1), 0 4px 6px -2px rgba(248, 249, 250, 0.1) !important;
+          box-shadow: 0 10px 15px 2px rgba(248, 249, 250, 0.1), 0 4px 6px -2px rgba(248, 249, 250, 0.1) !important;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.glow-dark {
+  -webkit-box-shadow: 0 10px 15px 2px rgba(52, 58, 64, 0.1), 0 4px 6px -2px rgba(52, 58, 64, 0.1) !important;
+          box-shadow: 0 10px 15px 2px rgba(52, 58, 64, 0.1), 0 4px 6px -2px rgba(52, 58, 64, 0.1) !important;
+}
+
+.text-light {
+  color: #f8f9fa;
+}
+
+.text-light a {
+  color: #f8f9fa;
+}
+
+.text-dark {
+  color: #343a40;
+}
+
 * {
   border-image-slice: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #4a5568;
   margin: 0;
 }
 
@@ -11,6 +145,7 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   line-height: 1.4;
+  color: #343a40;
 }
 
 h1 {
@@ -65,10 +200,11 @@ button {
 
 a {
   text-decoration: none;
+  color: #343a40;
 }
 
 a:hover {
-  color: red;
+  color: #96a0aa;
 }
 
 button,
@@ -76,7 +212,7 @@ input,
 optgroup,
 select,
 textarea {
-  border: 1px solid #dbdbdb;
+  border: 1px solid #dee2e6;
   border-radius: 4px;
   display: block;
   padding: 12px;
@@ -140,8 +276,8 @@ hr {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 4px;
-  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
-          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(52, 58, 64, 0.1), 0 4px 6px -2px rgba(52, 58, 64, 0.1);
+          box-shadow: 0 10px 15px -3px rgba(52, 58, 64, 0.1), 0 4px 6px -2px rgba(52, 58, 64, 0.1);
   overflow: hidden;
   position: relative;
 }
@@ -150,8 +286,8 @@ hr {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -webkit-box-shadow: 0 2px 4px rgba(10, 10, 10, 0.1);
-          box-shadow: 0 2px 4px rgba(10, 10, 10, 0.1);
+  -webkit-box-shadow: 0 2px 4px rgba(52, 58, 64, 0.1);
+          box-shadow: 0 2px 4px rgba(52, 58, 64, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,7 +354,7 @@ hr {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  border-top: 1px solid #edf2f7;
+  border-top: 1px solid #dee2e6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +381,7 @@ hr {
 }
 
 .card-footer-item:not(:last-child) {
-  border-right: 1px solid #edf2f7;
+  border-right: 1px solid #dee2e6;
 }
 
 .list-group {
@@ -265,7 +401,7 @@ hr {
 }
 
 .list-group-item {
-  border-top: 1px solid #edf2f7;
+  border-top: 1px solid #dee2e6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,8 +420,8 @@ hr {
 
 .badge, .badge-pill {
   border-radius: 4px;
-  background-color: #edf2f7;
-  color: #212529;
+  background-color: #e9ecef;
+  color: #343a40;
   display: inline-block;
   padding: 4px 8px;
   text-align: center;
@@ -301,7 +437,7 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  border: 1px solid #dbdbdb;
+  border: 1px solid #dee2e6;
   border-radius: 4px;
   cursor: pointer;
   display: -webkit-inline-box;
@@ -321,8 +457,8 @@ hr {
 }
 
 .btn:hover {
-  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
-          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(52, 58, 64, 0.1), 0 4px 6px -2px rgba(52, 58, 64, 0.1);
+          box-shadow: 0 10px 15px -3px rgba(52, 58, 64, 0.1), 0 4px 6px -2px rgba(52, 58, 64, 0.1);
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
@@ -397,8 +533,8 @@ hr {
 }
 
 .nav-top {
-  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
-          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(52, 58, 64, 0.1), 0 4px 6px -2px rgba(52, 58, 64, 0.1);
+          box-shadow: 0 10px 15px -3px rgba(52, 58, 64, 0.1), 0 4px 6px -2px rgba(52, 58, 64, 0.1);
   min-height: 61px;
   padding: 0 8px;
 }
@@ -448,7 +584,7 @@ hr {
 }
 
 .form {
-  border: 1px solid #dbdbdb;
+  border: 1px solid #dee2e6;
   border-radius: 4px;
 }
 
@@ -525,33 +661,5 @@ hr {
 
 .mfixed-top {
   margin-top: 61px;
-}
-
-.glow-green {
-  -webkit-box-shadow: 0 10px 15px -3px rgba(77, 175, 124, 0.5), 0 4px 6px -2px rgba(77, 175, 124, 0.1) !important;
-          box-shadow: 0 10px 15px -3px rgba(77, 175, 124, 0.5), 0 4px 6px -2px rgba(77, 175, 124, 0.1) !important;
-}
-
-.glow-red {
-  -webkit-box-shadow: 0 10px 15px -3px rgba(246, 36, 89, 0.5), 0 4px 6px -2px rgba(246, 36, 89, 0.1) !important;
-          box-shadow: 0 10px 15px -3px rgba(246, 36, 89, 0.5), 0 4px 6px -2px rgba(246, 36, 89, 0.1) !important;
-}
-
-.glow-yellow {
-  -webkit-box-shadow: 0 10px 15px -3px rgba(245, 229, 27, 0.5), 0 4px 6px -2px rgba(245, 229, 27, 0.1) !important;
-          box-shadow: 0 10px 15px -3px rgba(245, 229, 27, 0.5), 0 4px 6px -2px rgba(245, 229, 27, 0.1) !important;
-}
-
-.bk-red {
-  background-color: red;
-  color: white;
-}
-
-.bk-green {
-  background-color: limegreen;
-}
-
-.bk-blue {
-  background-color: lightblue;
 }
 /*# sourceMappingURL=main.css.map */

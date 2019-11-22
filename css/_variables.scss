@@ -1,0 +1,59 @@
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$grays: () !default;
+$grays: map-merge(
+    (
+        '100': $gray-100,
+        '200': $gray-200,
+        '300': $gray-300,
+        '400': $gray-400,
+        '500': $gray-500,
+        '600': $gray-600,
+        '700': $gray-700,
+        '800': $gray-800,
+        '900': $gray-900
+    ),
+    $grays
+);
+
+$blue: #3498db !default;
+$indigo: #34495e !default;
+$purple: #9b59b6 !default;
+$pink: #f08f90 !default;
+$red: #e74c3c !default;
+$orange: #e67e22 !default;
+$yellow: #f1c40f !default;
+$green: #2ecc71 !default;
+$teal: #1abc9d !default;
+$cyan: #20ccde !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+$colors: () !default;
+$colors: map-merge(
+    (
+        'blue': $blue,
+        'indigo': $indigo,
+        'purple': $purple,
+        'pink': $pink,
+        'red': $red,
+        'orange': $orange,
+        'yellow': $yellow,
+        'green': $green,
+        'teal': $teal,
+        'cyan': $cyan,
+        'light': $light,
+        'dark': $dark
+    ),
+    $colors
+);

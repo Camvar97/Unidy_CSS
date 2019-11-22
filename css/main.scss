@@ -1,12 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
+@import 'variables';
+@import 'mixins/bg-variant';
+@import 'mixins/boxshadow-variant';
+@import 'root';
+
+@each $color, $value in $colors {
+    @include bg-variant('.bg-#{$color}', $value);
+    @include boxshadow-variant('.glow-#{$color}', $value);
+}
+
+.text-light {
+    color: $light;
+    a {
+        color: $light;
+    }
+}
+
+.text-dark {
+    color: $dark;
+}
+
 $base-font-size: 48px;
 $heading-scale: 8;
 
 * {
     border-image-slice: 100%;
     box-sizing: border-box;
-    color: #4a5568;
     margin: 0;
 }
 
@@ -14,6 +34,7 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     line-height: 1.4;
+    color: $dark;
 }
 
 @for $i from 1 through 6 {
@@ -50,9 +71,9 @@ button {
 
 a {
     text-decoration: none;
-
+    color: $dark;
     &:hover {
-        color: red;
+        color: lighten($dark, 40%);
     }
 }
 
@@ -61,7 +82,7 @@ input,
 optgroup,
 select,
 textarea {
-    border: 1px solid #dbdbdb;
+    border: 1px solid $gray-300;
     border-radius: 4px;
     display: block;
     padding: 12px;
@@ -107,14 +128,14 @@ hr {
     display: flex;
     flex-direction: column;
     border-radius: 4px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px adjust-color($dark, $alpha: -0.9),
+        0 4px 6px -2px adjust-color($dark, $alpha: -0.9);
     overflow: hidden;
     position: relative;
 
     &-header {
         align-items: stretch;
-        box-shadow: 0 2px 4px rgba(10, 10, 10, 0.1);
+        box-shadow: 0 2px 4px adjust-color($dark, $alpha: -0.9);
         display: flex;
         z-index: 1;
 
@@ -161,7 +182,7 @@ hr {
 
     &-footer {
         align-items: stretch;
-        border-top: 1px solid #edf2f7;
+        border-top: 1px solid $gray-300;
         display: flex;
 
         &-item {
@@ -174,7 +195,7 @@ hr {
             padding: 16px;
 
             &:not(:last-child) {
-                border-right: 1px solid #edf2f7;
+                border-right: 1px solid $gray-300;
             }
         }
     }
@@ -191,7 +212,7 @@ hr {
     }
 
     &-item {
-        border-top: 1px solid #edf2f7;
+        border-top: 1px solid $gray-300;
         display: flex;
         padding: 16px;
         position: relative;
@@ -207,8 +228,8 @@ hr {
 
 .badge {
     border-radius: 4px;
-    background-color: #edf2f7;
-    color: #212529;
+    background-color: $gray-200;
+    color: $dark;
     display: inline-block;
     padding: 4px 8px;
     text-align: center;
@@ -222,8 +243,8 @@ hr {
 
 .btn {
     align-items: center;
-    background-color: #fff;
-    border: 1px solid #dbdbdb;
+    background-color: $white;
+    border: 1px solid $gray-300;
     border-radius: 4px;
     cursor: pointer;
     display: inline-flex;
@@ -237,8 +258,8 @@ hr {
     white-space: nowrap;
 
     &:hover {
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-            0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+        box-shadow: 0 10px 15px -3px adjust-color($dark, $alpha: -0.9),
+            0 4px 6px -2px adjust-color($dark, $alpha: -0.9);
         transition: all 0.15s ease-in-out;
     }
 
@@ -288,7 +309,7 @@ hr {
     display: flex;
     position: relative;
     z-index: 30;
-    background-color: #fff;
+    background-color: $white;
 
     &-brand,
     &-left,
@@ -300,8 +321,8 @@ hr {
 
     &-top {
         @extend .nav;
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-            0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+        box-shadow: 0 10px 15px -3px adjust-color($dark, $alpha: -0.9),
+            0 4px 6px -2px adjust-color($dark, $alpha: -0.9);
         min-height: 61px;
         padding: 0 8px;
     }
@@ -340,7 +361,7 @@ hr {
 }
 
 .form {
-    border: 1px solid #dbdbdb;
+    border: 1px solid $gray-300;
     border-radius: 4px;
 
     &-group {
@@ -402,37 +423,5 @@ hr {
 .mfixed {
     &-top {
         margin-top: 61px;
-    }
-}
-
-.glow {
-    &-green {
-        box-shadow: 0 10px 15px -3px rgba(77, 175, 124, 0.5),
-            0 4px 6px -2px rgba(77, 175, 124, 0.1) !important;
-    }
-
-    &-red {
-        box-shadow: 0 10px 15px -3px rgba(246, 36, 89, 0.5),
-            0 4px 6px -2px rgba(246, 36, 89, 0.1) !important;
-    }
-
-    &-yellow {
-        box-shadow: 0 10px 15px -3px rgba(245, 229, 27, 0.5),
-            0 4px 6px -2px rgba(245, 229, 27, 0.1) !important;
-    }
-}
-
-.bk {
-    &-red {
-        background-color: red;
-        color: white;
-    }
-
-    &-green {
-        background-color: limegreen;
-    }
-
-    &-blue {
-        background-color: lightblue;
     }
 }

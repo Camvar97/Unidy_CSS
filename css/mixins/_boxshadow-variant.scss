@@ -1,0 +1,6 @@
+@mixin boxshadow-variant($parent, $color) {
+    #{$parent} {
+        box-shadow: 0 10px 15px 2px adjust-color($color, $alpha: -0.9),
+            0 4px 6px -2px adjust-color($color, $alpha: -0.9) !important;
+    }
+}
