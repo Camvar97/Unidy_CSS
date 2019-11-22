@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <nav class="nav-top fixed-top">
+            <div class="nav-brand">
+                <div class="nav-item">
+                    Untitled CSS
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-left">
+                    <a href="index.html" class="nav-item">Home</a>
+                    <a href="form.html" class="nav-item">Forms</a>
+                    <a href="card.html" class="nav-item">Cards</a>
+                    <a href="button.html" class="nav-item">Buttons</a>
+                    <a href="nav.html" class="nav-item">Nav</a>
+                </div>
+                <div class="nav-right">
+                    <div class="nav-item">
+                        <button class="btn">Button</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container mfixed-top">
+            <form class="form" style="width: 50%;">
+                <div class="form-group">
+                    <label for="input1">Email Address</label>
+                    <input
+                        type="email"
+                        id="input1"
+                        class="form-control"
+                        placeholder="name@example.com"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="Select1">Example select</label>
+                    <select class="form-control" id="Select1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Select2">Example multiple select</label>
+                    <select multiple class="form-control" id="Select2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Textarea1">Example textarea</label>
+                    <textarea
+                        class="form-control"
+                        id="Textarea1"
+                        rows="3"
+                    ></textarea>
+                </div>
+                <div class="form-group-inline">
+                    <label for="input1">Password</label>
+                    <input type="password" id="input1" class="form-control" />
+                </div>
+                <div class="form-group-inline">
+                    <label for="Range">Range input</label>
+                    <input type="range" class="form-control-range" id="Range" />
+                </div>
+                <div class="form-check">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="defaultCheck1"
+                    />
+                    <label class="form-check-label" for="defaultCheck1">
+                        Default checkbox
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input
+                        class="form-check-input"
+                        type="radio"
+                        name="exampleRadios"
+                        id="exampleRadios1"
+                        value="option1"
+                        checked
+                    />
+                    <label class="form-check-label" for="exampleRadios1">
+                        Default radio
+                    </label>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
