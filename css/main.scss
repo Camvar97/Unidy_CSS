@@ -84,7 +84,7 @@ hr {
     margin: 12px 16px;
 }
 
-.container {
+.flexwrap {
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
@@ -93,12 +93,12 @@ hr {
     width: 100%;
 
     &-col {
-        @extend .container;
+        @extend .flexwrap;
         flex-direction: column;
     }
 
     &-nopad {
-        @extend .container;
+        @extend .flexwrap;
         padding: 0;
     }
 }
