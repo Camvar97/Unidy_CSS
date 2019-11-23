@@ -1,10 +1,13 @@
-var $dropdowns = getAll('.dropdown:not(.is-hoverable)');
+var $dropdowns = getAll('.dropdown');
 
 if ($dropdowns.length > 0) {
     $dropdowns.forEach(function($el) {
         $el.addEventListener('click', function(event) {
             event.stopPropagation();
-            $el.classList.toggle('show');
+            $($el)
+                .toggleClass('show')
+                .siblings('.show')
+                .removeClass('show');
         });
     });
 

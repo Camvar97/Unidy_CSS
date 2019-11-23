@@ -13,10 +13,26 @@
             <div class="nav-menu">
                 <div class="nav-left">
                     <a href="index.html" class="nav-item">Home</a>
-                    <a href="form.html" class="nav-item">Forms</a>
-                    <a href="card.html" class="nav-item">Cards</a>
-                    <a href="button.html" class="nav-item">Buttons</a>
-                    <a href="nav.html" class="nav-item">Nav</a>
+                    <div class="dropdown">
+                        <div class="nav-item dropdown-toggle">Elements</div>
+                        <div
+                            class="dropdown-menu bg-dark"
+                            aria-labelledby="dropdownMenuButton"
+                        >
+                            <a class="nav-item" href="button.html">Buttons</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="nav-item dropdown-toggle">Components</div>
+                        <div
+                            class="dropdown-menu bg-dark"
+                            aria-labelledby="dropdownMenuButton"
+                        >
+                            <a class="nav-item" href="form.html">Forms</a>
+                            <a class="nav-item" href="card.html">Cards</a>
+                            <a class="nav-item" href="nav.html">Nav</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="nav-right">
                     <div class="nav-item">
@@ -53,7 +69,24 @@
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>
             </div>
+            <div class="dropdown-hover">
+                <button
+                    class="btn dropdown-toggle"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    Hover Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
         </div>
         <script src="js/dropdown.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
     </body>
 </html>
