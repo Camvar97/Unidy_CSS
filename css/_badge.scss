@@ -1,0 +1,14 @@
+.badge {
+    border-radius: 4px;
+    background-color: $gray-200;
+    color: $dark;
+    display: inline-block;
+    padding: 4px 8px;
+    text-align: center;
+    vertical-align: baseline;
+
+    &-pill {
+        @extend .badge;
+        border-radius: 16px;
+    }
+}

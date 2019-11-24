@@ -1,0 +1,22 @@
+.flexwrap {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 24px;
+    width: 100%;
+
+    &-col {
+        @extend .flexwrap;
+        flex-direction: column;
+        align-items: stretch;
+        :first-child {
+            margin-top: 0 !important;
+        }
+    }
+
+    &-nopad {
+        @extend .flexwrap;
+        padding: 0;
+    }
+}

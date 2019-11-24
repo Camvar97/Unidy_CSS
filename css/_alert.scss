@@ -1,0 +1,10 @@
+.alert {
+    display: block;
+    min-width: 100%;
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin-top: 16px;
+    @each $theme, $value in $themes {
+        @include alert-variant('&-#{$theme}', $value);
+    }
+}

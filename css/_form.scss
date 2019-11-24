@@ -1,0 +1,50 @@
+.form {
+    border: 1px solid $gray-300;
+    border-radius: 4px;
+
+    &-group {
+        display: flex;
+        flex-direction: column;
+        padding: 12px 16px;
+
+        &-inline {
+            @extend .form-group;
+            flex-flow: row wrap;
+            align-items: center;
+
+            label {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 4px 8px 4px 0;
+            }
+        }
+    }
+
+    &-control {
+        display: block;
+        flex-grow: 1;
+
+        &-range {
+            display: block;
+            overflow: visible;
+            padding: 0;
+            flex-grow: 1;
+        }
+    }
+
+    &-check {
+        @extend .form-group;
+        padding-left: 32px;
+
+        &-label {
+            display: inline-block;
+        }
+
+        &-input {
+            position: absolute;
+            margin-top: 5px;
+            margin-left: -16px;
+        }
+    }
+}
