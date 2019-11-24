@@ -1,0 +1,9 @@
+@mixin alert-variant($parent, $color) {
+    #{$parent} {
+        @extend .alert;
+        background-color: $color;
+        border: 2px solid darken($color, 10%);
+        font-weight: 700;
+        color: darken($color, 50%);
+    }
+}

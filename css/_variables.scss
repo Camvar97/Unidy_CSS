@@ -57,3 +57,27 @@ $colors: map-merge(
     ),
     $colors
 );
+
+$primary: lighten($blue, 20%);
+$secondary: $gray-300;
+$success: lighten($green, 20%);
+$danger: lighten($red, 20%);
+$warning: lighten($yellow, 20%);
+$info: lighten($cyan, 20%);
+$light: lighten($light, 20%);
+$dark: lighten($dark, 20%);
+
+$themes: () !default;
+$themes: map-merge(
+    (
+        'primary': $primary,
+        'secondary': $secondary,
+        'success': $success,
+        'danger': $danger,
+        'warning': $warning,
+        'info': $info,
+        'light': $light,
+        'dark': $dark
+    ),
+    $themes
+);

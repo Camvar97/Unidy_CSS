@@ -3,6 +3,7 @@
 @import 'variables';
 @import 'mixins/bg-variant';
 @import 'mixins/boxshadow-variant';
+@import 'mixins/alert-variant';
 @import 'root';
 
 @each $color, $value in $colors {
@@ -116,6 +117,10 @@ hr {
     &-col {
         @extend .flexwrap;
         flex-direction: column;
+        align-items: stretch;
+        :first-child {
+            margin-top: 0 !important;
+        }
     }
 
     &-nopad {
@@ -469,5 +474,16 @@ hr {
         .dropdown-menu:hover {
             display: block !important;
         }
+    }
+}
+
+.alert {
+    display: block;
+    min-width: 100%;
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin-top: 16px;
+    @each $theme, $value in $themes {
+        @include alert-variant('&-#{$theme}', $value);
     }
 }
