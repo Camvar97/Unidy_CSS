@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css/prism.css" />
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
@@ -42,52 +43,144 @@
                 </div>
             </div>
         </nav>
-        <div class="flexwrap mfixed-top">
-            <button class="btn">Button</button>
-            <div class="btn-group">
+        <div class="flexwrap-col mfixed-top">
+            <div class="flexwrap-col border example">
                 <button class="btn">Button</button>
-                <button class="btn">Button</button>
-                <button class="btn bg-red">Button</button>
+                <pre><code class="language-html"><button class="btn">Button</button></code></pre>
             </div>
-            <div class="btn-group-vertical">
-                <button class="btn">Button</button>
-                <button class="btn">Button</button>
-                <button class="btn">Button</button>
-            </div>
-            <div class="dropdown">
-                <button
-                    class="btn dropdown-toggle"
-                    id="dropdownMenuButton"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                >
-                    Dropdown Button
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+            <div class="flexwrap-col border example">
+                <div class="btn-group">
+                    <button class="btn">Button</button>
+                    <button class="btn">Button</button>
+                    <button class="btn">Button</button>
                 </div>
+                <pre><code class="language-html">
+                    <div class="btn-group">
+                        <button class="btn">Button</button>
+                        <button class="btn">Button</button>
+                        <button class="btn">Button</button>
+                    </div>
+                </code></pre>
             </div>
-            <div class="dropdown-hover">
-                <button
-                    class="btn dropdown-toggle"
-                    id="dropdownMenuButton"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                >
-                    Hover Dropdown
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+            <div class="flexwrap border example">
+                <div class="btn-group-vertical" style="min-width: 25%;">
+                    <button class="btn">Button</button>
+                    <button class="btn">Button</button>
+                    <button class="btn">Button</button>
                 </div>
+                <pre><code class="language-html">
+                    <div class="btn-group-vertical">
+                        <button class="btn">Button</button>
+                        <button class="btn">Button</button>
+                        <button class="btn">Button</button>
+                    </div>
+                </code></pre>
+            </div>
+            <div class="flexwrap border example">
+                <div class="dropdown" style="min-width: 25%;">
+                    <button
+                        class="btn dropdown-toggle"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Dropdown Button
+                    </button>
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                    >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                            >Something else here</a
+                        >
+                    </div>
+                </div>
+                <pre><code class="language-html">
+                        <div class="dropdown">
+                            <button
+                                class="btn dropdown-toggle"
+                                id="dropdownMenuButton"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Dropdown Button
+                            </button>
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton"
+                            >
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                >
+                            </div>
+                        </div>
+                </code></pre>
+            </div>
+            <div class="flexwrap border example">
+                <div class="dropdown-hover" style="min-width: 25%;">
+                    <button
+                        class="btn dropdown-toggle"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Hover Dropdown
+                    </button>
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                    >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                            >Something else here</a
+                        >
+                    </div>
+                </div>
+                <pre><code class="language-html">
+                        <div class="dropdown-hover">
+                            <button
+                                class="btn dropdown-toggle"
+                                id="dropdownMenuButton"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Hover Dropdown
+                            </button>
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton"
+                            >
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                >
+                            </div>
+                        </div>
+                </code></pre>
             </div>
         </div>
         <script src="js/dropdown.js"></script>
         <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/prism.js"></script>
+        <script>
+            document.querySelectorAll('code').forEach(function(element) {
+                element.innerHTML = element.innerHTML
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#039;');
+            });
+        </script>
     </body>
 </html>

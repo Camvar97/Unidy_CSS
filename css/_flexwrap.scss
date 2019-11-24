@@ -1,10 +1,20 @@
 .flexwrap {
-    align-items: flex-start;
+    align-items: stretch;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 24px;
     width: 100%;
+
+    &.example {
+        flex-wrap: nowrap;
+        margin-top: 24px;
+        pre {
+            margin-top: 0 !important;
+            margin-left: 24px;
+            flex-grow: 1;
+        }
+    }
 
     &-col {
         @extend .flexwrap;
@@ -12,6 +22,12 @@
         align-items: stretch;
         :first-child {
             margin-top: 0 !important;
+        }
+        &.example {
+            pre {
+                margin-top: 24px !important;
+                margin-left: 0;
+            }
         }
     }
 
