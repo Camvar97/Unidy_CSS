@@ -3,7 +3,9 @@
         @extend .alert;
         background-color: $color;
         border: 2px solid darken($color, 10%);
-        font-weight: 700;
         color: darken($color, 50%);
+        .alert-link {
+            color: darken($color, 50%);
+        }
     }
 }
