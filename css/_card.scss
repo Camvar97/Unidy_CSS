@@ -6,6 +6,7 @@
         0 4px 6px -2px adjust-color($dark, $alpha: -0.9);
     overflow: hidden;
     position: relative;
+    align-self: flex-start;
 
     &-header {
         align-items: stretch;

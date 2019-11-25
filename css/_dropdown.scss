@@ -1,7 +1,7 @@
 .dropdown {
     &.show {
         .dropdown-menu {
-            display: block;
+            display: inline-block;
         }
     }
     &-menu {
@@ -24,10 +24,10 @@
     &-hover {
         @extend .dropdown;
         .dropdown-toggle:hover + .dropdown-menu {
-            display: block !important;
+            display: inline-block !important;
         }
         .dropdown-menu:hover {
-            display: block !important;
+            display: inline-block !important;
         }
     }
 }
