@@ -1,0 +1,15 @@
+@mixin btn-variant($parent, $color) {
+    #{$parent} {
+        @extend .btn;
+        background-color: $color;
+        border-color: $color;
+    }
+}
+
+@mixin btn-outline-variant($parent, $color) {
+    #{$parent} {
+        @extend .btn;
+        border: 2px solid darken($color, 0%);
+        color: darken($color, 20%);
+    }
+}

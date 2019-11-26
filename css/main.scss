@@ -6,6 +6,7 @@
 @import 'mixins/bg-variant';
 @import 'mixins/boxshadow-variant';
 @import 'mixins/alert-variant';
+@import 'mixins/btn-variant';
 @import 'flexwrap';
 @import 'root';
 @import 'button';
@@ -47,6 +48,7 @@ html {
     font-size: 16px;
     line-height: 1.4;
     color: $dark;
+    max-width: 100%;
 }
 
 @for $i from 1 through 6 {
@@ -118,6 +120,7 @@ hr {
 
 pre {
     background-color: $gray-300;
+    overflow: auto;
 }
 
 .fixed {
@@ -131,11 +134,23 @@ pre {
 
 .mfixed {
     &-top {
-        margin-top: 61px;
+        margin-top: 78px;
     }
 }
 
 .border {
     border: 1px solid $gray-300;
     border-radius: 4px;
+}
+
+.example-card {
+    @extend .card;
+    align-self: stretch;
+    .card-body {
+        padding-top: 0;
+    }
+}
+
+.padding {
+    margin: 8px 24px !important;
 }

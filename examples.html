@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/prism.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <nav class="nav-top fixed-top bg-dark text-light">
+            <div class="nav-brand">
+                <div class="nav-item">
+                    Unidy_CSS
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-left">
+                    <a href="index.html" class="nav-item">Home</a>
+                    <div class="dropdown-hover">
+                        <div class="nav-item dropdown-toggle">Elements</div>
+                        <div
+                            class="dropdown-menu bg-dark"
+                            aria-labelledby="dropdownMenuButton"
+                        >
+                            <a class="nav-item" href="button.html">Buttons</a>
+                            <a class="nav-item" href="alert.html">Alerts</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-hover">
+                        <div class="nav-item dropdown-toggle">Components</div>
+                        <div
+                            class="dropdown-menu bg-dark"
+                            aria-labelledby="dropdownMenuButton"
+                        >
+                            <a class="nav-item" href="form.html">Forms</a>
+                            <a class="nav-item" href="card.html">Cards</a>
+                            <a class="nav-item" href="nav.html">Nav</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class="nav-item">
+                        <button class="btn">Button</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="flexwrap-col mfixed-top">
+            <div class="example-card">
+                <div class="card-header">
+                    <p class="card-header-title">Regular Button</p>
+                </div>
+                <div class="card-demo">
+                    <button class="btn">Button</button>
+                    <button class="btn-primary">Primary</button>
+                    <button class="btn-secondary">Secondary</button>
+                    <button class="btn-success">Success</button>
+                    <button class="btn-danger">Danger</button>
+                    <button class="btn-warning">Warning</button>
+                    <button class="btn-info">Info</button>
+                    <button class="btn-light">Light</button>
+                    <button class="btn-dark">Dark</button>
+                </div>
+                <div class="card-body">
+                    <pre><code class="language-html">
+                        <button class="btn">Button</button>
+                        <button class="btn-primary">Button</button>
+                    </code></pre>
+                </div>
+                <div class="card-footer">
+                    This is where the explanation of the code will go
+                </div>
+            </div>
+            <div class="example-card">
+                <div class="card-header glow">
+                    <p class="card-header-title">Outline Button</p>
+                </div>
+                <div class="card-demo">
+                    <button class="btn-outline-primary">Primary</button>
+                    <button class="btn-outline-secondary">Secondary</button>
+                    <button class="btn-outline-success">Success</button>
+                    <button class="btn-outline-danger">Danger</button>
+                    <button class="btn-outline-warning">Warning</button>
+                    <button class="btn-outline-info">Info</button>
+                    <button class="btn-outline-light">Light</button>
+                    <button class="btn-outline-dark">Dark</button>
+                </div>
+                <div class="card-body">
+                    <pre><code class="language-html"><button class="btn-outline-primary">Button</button></code></pre>
+                </div>
+                <div class="card-footer">
+                    This is where the explanation of the code will go
+                </div>
+            </div>
+        </div>
+        <script src="js/dropdown.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/prism.js"></script>
+        <script>
+            document.querySelectorAll('code').forEach(function(element) {
+                element.innerHTML = element.innerHTML
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#039;');
+            });
+        </script>
+    </body>
+</html>
