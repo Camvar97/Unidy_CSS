@@ -7,5 +7,11 @@
         .alert-link {
             color: darken($color, 40%);
         }
+        .alert-type {
+            background-color: $color;
+            .circle {
+                background-color: darken($color, 10%);
+            }
+        }
     }
 }
