@@ -3,6 +3,7 @@
     padding: 12px 24px;
     border-radius: 4px;
     margin: 8px 24px;
+    position: relative;
 
     @each $theme, $value in $themes {
         @include alert-variant('&-#{$theme}', $value);
@@ -11,6 +12,19 @@
         font-weight: 700;
         &:hover {
             text-decoration: underline;
+        }
+    }
+    &-closable {
+        .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 12px 24px;
+            background-color: transparent;
+            border: none;
+            opacity: 0.5;
+            font-weight: 700;
+            font-size: 18px;
         }
     }
 }
