@@ -1,6 +1,6 @@
 // FOX_CSS by: Cameron Varley
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 @import 'variables';
 @import 'mixins/bg-variant';
@@ -34,7 +34,8 @@
     color: $dark;
 }
 
-$base-font-size: 48px;
+$base-font-size: 1rem;
+$base-line-height: 1.5;
 $heading-scale: 8;
 
 * {
@@ -46,25 +47,26 @@ $heading-scale: 8;
 html {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
-    line-height: 1.4;
+    font-weight: 400;
+    line-height: 1.5;
     color: $dark;
     max-width: 100%;
 }
 
 @for $i from 1 through 6 {
     h#{$i} {
-        font-size: $base-font-size + $heading-scale - (8 * $i);
+        $font-size: ((10-$i)*0.25)*16px;
+        font-size: $font-size;
+        font-weight: 600;
+        line-height: (1.5*16px)*2/$font-size;
+        margin-top: (1.5*16px)/$font-size;
+        margin-bottom: (1.5*16px)/$font-size;
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p {
-    margin: 0 0 20px 0;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 img {
@@ -149,8 +151,30 @@ pre {
     .card-body {
         padding-top: 0;
     }
+    &-demo {
+        @extend .flexwrap;
+        align-items: flex-start;
+        pre {
+            flex-grow: 1;
+        }
+        & > :last-child {
+            margin-right: 24px;
+        }
+    }
 }
 
 .padding {
     margin: 8px 24px !important;
+}
+
+.intro {
+    &-title {
+        font-size: 2.25em;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    &-subtitle {
+        font-size: 1.5em;
+        font-weight: 300;
+    }
 }
