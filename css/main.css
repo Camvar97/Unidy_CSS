@@ -814,9 +814,6 @@ select {
   display: flex;
   padding: 16px;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 0 !important;
 }
 
@@ -824,6 +821,14 @@ select {
   margin-left: auto;
   margin-top: -8px !important;
   margin-bottom: -8px;
+}
+
+.list-group-item-sub {
+  margin-left: 2rem;
+}
+
+.list-group-item.flexwrap-col, .list-group-item.example {
+  padding: 0;
 }
 
 .badge, .badge-pill {

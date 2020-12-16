@@ -14,13 +14,20 @@
         display: flex;
         padding: 16px;
         position: relative;
-        align-items: center;
         margin-top: 0 !important;
 
         .badge {
             margin-left: auto;
             margin-top: -8px !important;
             margin-bottom: -8px;
+        }
+
+        &-sub {
+            margin-left: 2rem;
+        }
+
+        &.flexwrap-col {
+            padding: 0;
         }
     }
 }
