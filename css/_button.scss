@@ -24,9 +24,16 @@ button {
         @include btn-outline-variant('&-outline-#{$theme}', $value);
     }
 
+    &-light {
+        border: 2px solid $gray-300;
+    }
+
     &-outline {
         @extend .btn;
         border: 2px solid $gray-300;
+        &-light {
+            border: 2px solid $gray-300;
+        }
     }
 
     &:hover {

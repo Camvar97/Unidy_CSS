@@ -2,18 +2,20 @@
     display: block;
     padding: 12px 24px;
     border-radius: 4px;
-    margin: 8px 24px;
+    margin: 0.5em 0em;
     position: relative;
 
     @each $theme, $value in $themes {
         @include alert-variant('&-#{$theme}', $value);
     }
+
     &-link {
         font-weight: 700;
         &:hover {
             text-decoration: underline;
         }
     }
+
     &-closable {
         .close {
             position: absolute;
