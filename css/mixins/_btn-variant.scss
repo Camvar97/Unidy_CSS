@@ -9,7 +9,7 @@
 @mixin btn-outline-variant($parent, $color) {
     #{$parent} {
         @extend .btn;
-        border: 2px solid darken($color, 0%);
+        border: 0.25rem solid darken($color, 0%);
         color: darken($color, 20%);
     }
 }

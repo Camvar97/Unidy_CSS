@@ -1,11 +1,11 @@
 .form {
     border: 1px solid $gray-300;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 
     &-group {
         display: flex;
         flex-direction: column;
-        padding: 12px 16px;
+        padding: 0.5rem 1rem;
 
         &-inline {
             @extend .form-group;
@@ -16,7 +16,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin: 4px 8px 4px 0;
+                margin: 0.25rem 0.5rem 0.25rem 0;
             }
         }
     }
@@ -35,7 +35,7 @@
 
     &-check {
         @extend .form-group;
-        padding-left: 32px;
+        padding-left: 2rem;
 
         &-label {
             display: inline-block;
@@ -43,8 +43,8 @@
 
         &-input {
             position: absolute;
-            margin-top: 5px;
-            margin-left: -16px;
+            margin-top: 0.25rem;
+            margin-left: -1rem;
         }
     }
 }
