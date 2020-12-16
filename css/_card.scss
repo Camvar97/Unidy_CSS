@@ -9,7 +9,13 @@
     position: relative;
     align-self: flex-start;
     margin: 0.5rem 0;
-    max-width: calc(100vw - (100vw - 100%) - 48px);
+    //max-width: calc(100vw - (100vw - 100%) - 48px);
+
+    @at-root .demo {
+        .card {
+            margin: 0 !important;
+        }
+    }
 
     @at-root .flexwrap {
         .card {
