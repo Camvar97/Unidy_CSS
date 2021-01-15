@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css/prism.css" />
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
         <nav class="nav-top fixed-top bg-dark text-light">
             <div class="nav-brand">
                 <div class="nav-item">
-                    Unidy_CSS
+                    FOX_CSS
                 </div>
             </div>
             <div class="nav-menu">
@@ -42,56 +43,250 @@
                 </div>
             </div>
         </nav>
-        <div class="flexwrap mfixed-top">
-            <div class="card" style="width: 300px;">
-                <div class="card-header">
-                    <p class="card-header-title">Header</p>
-                    <div class="card-header-right">
-                        <div class="badge-pill bg-green">9</div>
+        <div class="flexwrap mfixed-top padded">
+            <div class="flexwrap-col flexgrow">
+                <article class="intro">
+                    <div class="intro-title">Cards</div>
+                    <div class="intro-subtitle">FOX_CSS card work in a similar way to Bootstrap cards. With multiple variant and options that act like puzzle pieces.</div>
+                </article>
+                <h2>Example</h2>
+                <div class="example">
+                    <div class="demo">
+                        <div class="card" style="width: 300px;">
+                            <div class="card-media">
+                                <img
+                                    src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_800/https://www.testingxperts.com/wp-content/uploads/2019/02/placeholder-img.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Card with Media</h4>
+                                <p class="card-text">
+                                    You can also embed media at the top of the cards.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code">
+                        <pre><code class="language-html">
+                            <div class="card" style="width: 300px;">
+                                <div class="card-media">
+                                    <img
+                                        src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_800/https://www.testingxperts.com/wp-content/uploads/2019/02/placeholder-img.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Card with Media</h4>
+                                    <p class="card-text">
+                                        You can also embed media at the top of the cards.
+                                    </p>
+                                </div>
+                            </div>
+                        </code></pre>
                     </div>
                 </div>
-                <div class="card-media">
-                    <img
-                        src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_800/https://www.testingxperts.com/wp-content/uploads/2019/02/placeholder-img.jpg"
-                        alt=""
-                    />
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Card Title</h4>
-                    <p class="card-text">
-                        The quick brown fox jumps over the lazy dog
-                    </p>
-                    <div class="card-tags">
-                        <div class="badge glow-red bg-red">#badge</div>
-                        <div class="badge-pill bg-blue">#tags</div>
+                <h2>Content Types</h2>
+                <h3>Card Body</h3>
+                <div class="example">
+                    <div class="demo">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    The quick brown fox jumps over the lazy dog.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code">
+                        <pre><code class="language-html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        The quick brown fox jumps over the lazy dog.
+                                    </p>
+                                </div>
+                            </div>
+                        </code></pre>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <div class="card-footer-item">item 1</div>
-                    <div class="card-footer-item">item 2</div>
+                <h3>Titles</h3>
+                <div class="example">
+                    <div class="demo">
+                        <div class="card" style="width: 300px;">
+                            <div class="card-body">
+                                <h4 class="card-title">Card Title</h4>
+                                <p class="card-text">
+                                    The quick brown fox jumps over the lazy dog.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code">
+                        <pre><code class="language-html">
+                            <div class="card" style="width: 300px;">
+                                <div class="card-body">
+                                    <h4 class="card-title">...</h4>
+                                    <p class="card-text">...</p>
+                                </div>
+                                <div class="card-footer">
+                                    <!-- using this without 'card-footer-item' will cause the text to be left aligned. --> 
+                                    <div class="card-footer-item">...</div>
+                                </div>
+                            </div>
+                        </code></pre>
+                    </div>
+                </div>
+                <h3>Images</h3>
+                <div class="example">
+                    <div class="demo">
+                        <div class="card" style="width: 300px;">
+                            <div class="card-media">
+                                <img
+                                    src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_800/https://www.testingxperts.com/wp-content/uploads/2019/02/placeholder-img.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    The quick brown fox jumps over the lazy dog.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code">
+                        <pre><code class="language-html">
+                            <div class="card" style="width: 300px;">
+                                <div class="card-media">
+                                    <img
+                                        src="..."
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        The quick brown fox jumps over the lazy dog.
+                                    </p>
+                                </div>
+                            </div>
+                        </code></pre>
+                    </div>
+                </div>
+                <h3>Headers and Footers</h3>
+                <div class="example">
+                    <div class="demo">
+                        <div class="card" style="width: 300px;">
+                            <div class="card-header">
+                                <p class="card-header-title">Header</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    The quick brown fox jumps over the lazy dog.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                Some footer text.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code">
+                        <pre><code class="language-html">
+                            <div class="card" style="width: 300px;">
+                                <div class="card-header">
+                                    <p class="card-header-title">Header</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        The quick brown fox jumps over the lazy dog.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    Some footer text.
+                                </div>
+                            </div>
+                        </code></pre>
+                    </div>
+                </div>
+                <h2>List Groups</h2>
+                <div class="example">
+                    <div class="demo">
+                        <div class="card" style="width: 300px;">
+                            <div class="card-header">
+                                <p class="card-header-title">List Card</p>
+                            </div>
+                            <ul class="list-group">
+                                <a href="index.html" class="list-group-item">
+                                    Card
+                                </a>
+                                <ul class="list-group-item flexwrap-col">
+                                    <a href="index.html" class="list-group-item">
+                                        Dropdown
+                                    </a>
+                                    <a href="index.html" class="list-group-item">
+                                        <span class="list-group-item-sub">drop item 1</span>
+                                    </a>
+                                    <a href="index.html" class="list-group-item">
+                                        <span class="list-group-item-sub">drop item 2</span> 
+                                    </a>
+                                </ul>
+                                <a href="form.html" class="list-group-item">
+                                    Form
+                                </a>
+                                <a href="nav.html" class="list-group-item">
+                                    Navigation
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="code">
+                        <pre><code class="language-html">
+                            <div class="card" style="width: 300px;">
+                                <div class="card-header">
+                                    <p class="card-header-title">List Card</p>
+                                </div>
+                                <ul class="list-group">
+                                    <a href="index.html" class="list-group-item">
+                                        Card
+                                    </a>
+                                    <ul class="list-group-item flexwrap-col">
+                                        <a href="index.html" class="list-group-item">
+                                            Dropdown
+                                        </a>
+                                        <a href="index.html" class="list-group-item">
+                                            <span class="list-group-item-sub">drop item 1</span>
+                                        </a>
+                                        <a href="index.html" class="list-group-item">
+                                            <span class="list-group-item-sub">drop item 2</span> 
+                                        </a>
+                                    </ul>
+                                    <a href="form.html" class="list-group-item">
+                                        Form
+                                    </a>
+                                    <a href="nav.html" class="list-group-item">
+                                        Navigation
+                                    </a>
+                                </ul>
+                            </div>
+                        </code></pre>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="width: 300px;">
-                <div class="card-header">
-                    <p class="card-header-title">List Card</p>
-                </div>
-                <ul class="list-group">
-                    <a href="index.html" class="list-group-item">
-                        Card
-                    </a>
-                    <a href="button.html" class="bg-red list-group-item">
-                        Button
-                    </a>
-                    <a href="form.html" class="list-group-item">
-                        Form
-                    </a>
-                    <a href="nav.html" class="list-group-item">
-                        Navigation
-                    </a>
-                </ul>
+            <div class="toc" id="ToC">
             </div>
         </div>
         <script src="js/dropdown.js"></script>
+        <script src="js/toc.js"></script>
         <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/prism.js"></script>
+        <script>
+            document.querySelectorAll('code').forEach(function(element) {
+                element.innerHTML = element.innerHTML
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#039;');
+            });
+        </script>
     </body>
 </html>

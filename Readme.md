@@ -1,7 +1,12 @@
-# Unidy_CSS
+# Fox_CSS
 **By: Cameron Varley**
 
-Currently a WIP css framework with a temporary name!
+Currently a WIP CSS Framework. I hope to finish this one day.
+
+I built this based on the following CSS Frameworks
+1. Bootstrap
+2. Bulma
+3. UI-Kit
 
 **To Use**
 1. clone this git

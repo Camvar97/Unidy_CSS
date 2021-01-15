@@ -17,8 +17,8 @@
         @extend .nav;
         box-shadow: 0 10px 15px -3px adjust-color($dark, $alpha: -0.9),
             0 4px 6px -2px adjust-color($dark, $alpha: -0.9);
-        min-height: 61px;
-        padding: 0 8px;
+        min-height: 3.75rem;
+        padding: 0 0.5rem;
 
         .dropdown {
             display: flex;
@@ -35,7 +35,7 @@
 
     &-brand {
         flex-shrink: 0;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 700;
     }
 
@@ -53,10 +53,10 @@
         align-items: center;
         display: flex;
         cursor: pointer;
-        padding: 12px 16px;
+        padding: 0.5rem 1rem;
 
         .btn {
-            padding: 8px 12px;
+            padding: 0.5rem;
         }
     }
 

@@ -3,25 +3,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-
-    & > :first-child {
-        margin-left: 24px;
-    }
-
-    & > :last-child {
-        margin-right: 24px;
-    }
 
     &-col {
         @extend .flexwrap;
         flex-direction: column;
         align-items: stretch;
-        //margin: 0 24px;
     }
 
     &-nowrap {
         @extend .flexwrap;
         flex-wrap: nowrap;
     }
+}
+
+.flexgrow {
+    flex-grow: 1;
+}
+
+.flexshrink {
+    flex-shrink: 1;
 }
